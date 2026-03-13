@@ -35,7 +35,7 @@ def listar_tasks(db: Session = Depends(get_db)):
 
 #Buscar Tarefa por ID
 @router.get("/task")
-def pegar_tarefa(task_id: int, db: Session = Depends(get.db)):
+def pegar_tarefa(task_id: int, db: Session = Depends(get_db)):
 
     task = db.query(Task).filter(Task.id == task_id).first()
 
