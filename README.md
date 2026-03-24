@@ -2,18 +2,10 @@
 
 ## 📌 Sobre o Projeto
 
-Esta API foi desenvolvida com o objetivo de simular um sistema de gerenciamento de tarefas com hierarquia entre usuários.
+Esta API foi desenvolvida com o objetivo de simular um sistema de gerenciamento de tarefas com hierarquia entre dois tipos de usuários.
 
-## 👥 Tipos de Usuários
+- **Líder**: Pode criar tarefas para si e para seus subordinados
 
-- **Líder**
+- **Liderado**: Pode criar suas próprias tarefas (dependendo da configuração do sistema)
 
-   Pode criar tarefas para si e para seus subordinados
-
-- **Liderado**
-
-   Pode criar suas próprias tarefas (dependendo da configuração)
-
-## 🔒 Regras do Sistema
-
-- É possível restringir a criação de tarefas apenas para líderes
+Além disso, o sistema possui uma funcionalidade de controle onde é possível restringir a criação de tarefas apenas para líderes.
