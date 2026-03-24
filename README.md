@@ -1,4 +1,4 @@
-# 🚀 FastAPI Tasks
+# FastAPI Tasks
 
 ## 📌 Sobre o Projeto
 
