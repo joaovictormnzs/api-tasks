@@ -1,5 +1,5 @@
 from fastapi import HTTPException
-from app.users.service import user_service
+from app.services import user_service
 
 def criar_user(user, db):
     return user_service.criar_user(user, db)

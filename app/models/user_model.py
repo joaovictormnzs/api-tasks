@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String
 from app.database import Base 
-from app.users.enums.user_role import UserRole
+from app.enums.user_role import UserRole
 
 class User(Base):
 

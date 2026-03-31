@@ -1,4 +1,4 @@
-from app.users.model.user_model import User
+from app.models.user_model import User
 
 def criar_user(user_data, db):
 

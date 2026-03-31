@@ -1,5 +1,5 @@
 from fastapi import HTTPException
-from app.task.service import task_service
+from app.services import task_service
 
 
 def criar_task(task, db):

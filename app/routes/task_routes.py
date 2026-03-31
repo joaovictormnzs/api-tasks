@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from app.database import SessionLocal
-from app.task.controller import task_controller
-from app.task.schema.task_schema import TaskCreate, TaskResponse
+from app.controllers import task_controller
+from app.schemas.task_schema import TaskCreate, TaskResponse
 
 router = APIRouter()
 
