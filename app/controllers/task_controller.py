@@ -48,3 +48,7 @@ def deletar_task(task_id, db):
     task_service.deletar_task(task, db)
 
     return {"message": "Tarefa deletada!"}
+
+def toggle_mode(only_leader: bool):
+    task_service.ONLY_LEADER_CAN_CREATE = only_leader
+    return {"only_leader_can_create": only_leader}

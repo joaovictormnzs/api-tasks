@@ -27,3 +27,7 @@ def listar_users(db: Session = Depends(get_db)):
 @router.get("/{user_id}")
 def pegar_user(user_id: int, db: Session = Depends(get_db)):
     return user_controller.pegar_user(user_id, db)
+
+@router.delete("/user/{user_id}")
+def delete_user(user_id: int, db: Session = Depends(get_db)):
+    return user_controller.deletar_user(user_id, db)

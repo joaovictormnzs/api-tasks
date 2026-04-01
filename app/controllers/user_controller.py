@@ -15,3 +15,13 @@ def pegar_user(user_id, db):
     
     return user
 
+def deletar_user(user_id, db):
+    user = user_service.buscar_user(user_id, db)
+    
+    if not user:
+        raise HTTPException(status_code=404, detail="Usuario nao encontrado!")
+    
+    user_service.deletar_user(user, db)
+
+    return {"message":"Usuario deletado com sucesso!"}
+

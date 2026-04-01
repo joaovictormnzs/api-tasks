@@ -6,14 +6,17 @@ class TaskCreate(BaseModel):
     title : str
     description: Optional[str]
     priority: str
+    created_by_id: int
+    assigned_to_id: Optional[int] = None
 
 class TaskResponse(BaseModel):
     id: int
     title: str
     description: Optional[str]
     priority: str
-    conmpleted: bool
-    created_by: datetime
+    completed: bool
+    created_by_id: int
+    assigned_to_id: int
 
     class Config:
         from_attributes = True

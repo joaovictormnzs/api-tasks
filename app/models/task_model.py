@@ -11,7 +11,5 @@ class Task(Base):
         description = Column(String)
         priority = Column(String)
         completed = Column(Boolean, default=False)
-
-
-        created_by_id = Column(Integer, ForeignKey("user.id"))
-        assigned_to_id = Column(Integer, ForeignKey("user.id"))
+        created_by_id = Column(Integer, ForeignKey("users.id"))
+        assigned_to_id = Column(Integer, ForeignKey("users.id"))

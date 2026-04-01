@@ -42,3 +42,7 @@ def concluida_task(task_id: int, db: Session = Depends(get_db)):
 @router.delete("/tasks/{task_id}")
 def delete_task(task_id: int, db: Session = Depends(get_db)):
     return task_controller.deletar_task(task_id, db)
+
+@router.post("/config/only-leader")
+def set_mode(only_leader: bool):
+    return task_controller.toggle_mode(only_leader)

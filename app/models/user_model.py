@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, Enum
 from app.database import Base 
 from app.enums.user_role import UserRole
 
@@ -8,4 +8,4 @@ class User(Base):
 
     id = Column(Integer, primary_key= True, index=True)
     name = Column(String, nullable=False)
-    role = Column(String, nullable=False)
+    role = Column(Enum(UserRole), nullable=False)
