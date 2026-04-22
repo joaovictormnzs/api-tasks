@@ -3,7 +3,7 @@ from app.models.user_model import User
 from app.models.task_model import Task
 from app.enums.user_role import UserRole
 
-secret_key = "joao123"
+secret_key = "admin123"
 
 def criar_user(user_data, db):
 
